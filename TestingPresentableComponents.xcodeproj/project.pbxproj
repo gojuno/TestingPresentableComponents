@@ -12,6 +12,12 @@
 		BCD355C1208CF233008B750D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C0208CF233008B750D /* Assets.xcassets */; };
 		BCD355C4208CF233008B750D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C2208CF233008B750D /* LaunchScreen.storyboard */; };
 		BCD355CF208CF233008B750D /* TestingPresentableComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355CE208CF233008B750D /* TestingPresentableComponentsTests.swift */; };
+		BCD355DC208CFEB7008B750D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */; };
+		BCD355DD208CFEB7008B750D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DB208CFEB7008B750D /* Result.framework */; };
+		BCD355E1208D01FC008B750D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DF208D01FC008B750D /* Nimble.framework */; };
+		BCD355E2208D01FC008B750D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355E0208D01FC008B750D /* Quick.framework */; };
+		BCD355E4208D048B008B750D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCD355DF208D01FC008B750D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCD355E5208D048B008B750D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCD355E0208D01FC008B750D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +30,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BCD355E3208D0420008B750D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BCD355E4208D048B008B750D /* Nimble.framework in CopyFiles */,
+				BCD355E5208D048B008B750D /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BCD355B6208CF233008B750D /* TestingPresentableComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPresentableComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD355B9208CF233008B750D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +54,10 @@
 		BCD355CA208CF233008B750D /* TestingPresentableComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingPresentableComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD355CE208CF233008B750D /* TestingPresentableComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingPresentableComponentsTests.swift; sourceTree = "<group>"; };
 		BCD355D0208CF233008B750D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		BCD355DB208CFEB7008B750D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		BCD355DF208D01FC008B750D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		BCD355E0208D01FC008B750D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD355DC208CFEB7008B750D /* ReactiveSwift.framework in Frameworks */,
+				BCD355DD208CFEB7008B750D /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD355E1208D01FC008B750D /* Nimble.framework in Frameworks */,
+				BCD355E2208D01FC008B750D /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +88,7 @@
 				BCD355B8208CF233008B750D /* TestingPresentableComponents */,
 				BCD355CD208CF233008B750D /* TestingPresentableComponentsTests */,
 				BCD355B7208CF233008B750D /* Products */,
+				BCD355D9208CFEB7008B750D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +122,17 @@
 			path = TestingPresentableComponentsTests;
 			sourceTree = "<group>";
 		};
+		BCD355D9208CFEB7008B750D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCD355DF208D01FC008B750D /* Nimble.framework */,
+				BCD355E0208D01FC008B750D /* Quick.framework */,
+				BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */,
+				BCD355DB208CFEB7008B750D /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +143,7 @@
 				BCD355B2208CF233008B750D /* Sources */,
 				BCD355B3208CF233008B750D /* Frameworks */,
 				BCD355B4208CF233008B750D /* Resources */,
+				BCD355DE208CFEE7008B750D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -120,6 +161,7 @@
 				BCD355C6208CF233008B750D /* Sources */,
 				BCD355C7208CF233008B750D /* Frameworks */,
 				BCD355C8208CF233008B750D /* Resources */,
+				BCD355E3208D0420008B750D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -189,6 +231,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCD355DE208CFEE7008B750D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCD355B2208CF233008B750D /* Sources */ = {
@@ -342,6 +404,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestingPresentableComponents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojuno.TestingPresentableComponents;
@@ -356,6 +422,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestingPresentableComponents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojuno.TestingPresentableComponents;
@@ -371,6 +441,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestingPresentableComponentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojuno.TestingPresentableComponentsTests;
@@ -387,6 +461,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestingPresentableComponentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojuno.TestingPresentableComponentsTests;
