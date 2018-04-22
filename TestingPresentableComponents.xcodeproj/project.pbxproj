@@ -82,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC8F85FD208D069400AB4551 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCD355C0208CF233008B750D /* Assets.xcassets */,
+				BCD355C2208CF233008B750D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC8F85FE208D06C900AB4551 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD355C5208CF233008B750D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BCD355AD208CF232008B750D = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +106,7 @@
 				BCD355CD208CF233008B750D /* TestingPresentableComponentsTests */,
 				BCD355B7208CF233008B750D /* Products */,
 				BCD355D9208CFEB7008B750D /* Frameworks */,
+				BC8F85FD208D069400AB4551 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,11 +122,9 @@
 		BCD355B8208CF233008B750D /* TestingPresentableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BC8F85FE208D06C900AB4551 /* Supporting Files */,
 				BCD355B9208CF233008B750D /* AppDelegate.swift */,
 				BCD355BB208CF233008B750D /* ViewController.swift */,
-				BCD355C0208CF233008B750D /* Assets.xcassets */,
-				BCD355C2208CF233008B750D /* LaunchScreen.storyboard */,
-				BCD355C5208CF233008B750D /* Info.plist */,
 			);
 			path = TestingPresentableComponents;
 			sourceTree = "<group>";
@@ -408,7 +424,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = TestingPresentableComponents/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestingPresentableComponents/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojuno.TestingPresentableComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +442,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = TestingPresentableComponents/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestingPresentableComponents/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojuno.TestingPresentableComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
