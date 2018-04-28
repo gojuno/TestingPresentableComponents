@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */; };
+		BC8F862B208D0ECA00AB4551 /* Fraktal+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F862A208D0ECA00AB4551 /* Fraktal+UIKit.swift */; };
+		BC8F8655208D110500AB4551 /* RootStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F8654208D110500AB4551 /* RootStory.swift */; };
 		BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355B9208CF233008B750D /* AppDelegate.swift */; };
-		BCD355BC208CF233008B750D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355BB208CF233008B750D /* ViewController.swift */; };
+		BCD355BC208CF233008B750D /* RootStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355BB208CF233008B750D /* RootStoryViewController.swift */; };
 		BCD355C1208CF233008B750D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C0208CF233008B750D /* Assets.xcassets */; };
 		BCD355C4208CF233008B750D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C2208CF233008B750D /* LaunchScreen.storyboard */; };
 		BCD355CF208CF233008B750D /* TestingPresentableComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355CE208CF233008B750D /* TestingPresentableComponentsTests.swift */; };
@@ -45,9 +48,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FraktalSimplified.swift; sourceTree = "<group>"; };
+		BC8F862A208D0ECA00AB4551 /* Fraktal+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fraktal+UIKit.swift"; sourceTree = "<group>"; };
+		BC8F8654208D110500AB4551 /* RootStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStory.swift; sourceTree = "<group>"; };
 		BCD355B6208CF233008B750D /* TestingPresentableComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPresentableComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD355B9208CF233008B750D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCD355BB208CF233008B750D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCD355BB208CF233008B750D /* RootStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStoryViewController.swift; sourceTree = "<group>"; };
 		BCD355C0208CF233008B750D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCD355C3208CF233008B750D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCD355C5208CF233008B750D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +105,32 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BC8F8601208D0E3F00AB4551 /* FraktalSimplified */ = {
+			isa = PBXGroup;
+			children = (
+				BC8F862A208D0ECA00AB4551 /* Fraktal+UIKit.swift */,
+				BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */,
+			);
+			path = FraktalSimplified;
+			sourceTree = "<group>";
+		};
+		BC8F8656208D110F00AB4551 /* RootStory */ = {
+			isa = PBXGroup;
+			children = (
+				BCD355BB208CF233008B750D /* RootStoryViewController.swift */,
+				BC8F8654208D110500AB4551 /* RootStory.swift */,
+			);
+			path = RootStory;
+			sourceTree = "<group>";
+		};
+		BC8F8657208D112200AB4551 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				BC8F8656208D110F00AB4551 /* RootStory */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
 		BCD355AD208CF232008B750D = {
 			isa = PBXGroup;
 			children = (
@@ -122,9 +154,10 @@
 		BCD355B8208CF233008B750D /* TestingPresentableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BC8F8657208D112200AB4551 /* Componets */,
+				BC8F8601208D0E3F00AB4551 /* FraktalSimplified */,
 				BC8F85FE208D06C900AB4551 /* Supporting Files */,
 				BCD355B9208CF233008B750D /* AppDelegate.swift */,
-				BCD355BB208CF233008B750D /* ViewController.swift */,
 			);
 			path = TestingPresentableComponents;
 			sourceTree = "<group>";
@@ -273,8 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCD355BC208CF233008B750D /* ViewController.swift in Sources */,
+				BC8F8655208D110500AB4551 /* RootStory.swift in Sources */,
+				BC8F862B208D0ECA00AB4551 /* Fraktal+UIKit.swift in Sources */,
+				BCD355BC208CF233008B750D /* RootStoryViewController.swift in Sources */,
 				BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */,
+				BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
