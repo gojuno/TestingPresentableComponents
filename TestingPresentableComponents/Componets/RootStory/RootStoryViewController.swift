@@ -30,7 +30,7 @@ final class RootStoryViewController: UIViewController {
 
 extension RootStoryViewController {
     var presenter: Presenter<RootStory> {
-        return Presenter { [weak self] presentable in
+        return Presenter.UI { [weak self] presentable in
             guard let someSelf = self else { return nil }
             return presentable.present(RootStoryPresenters(
                 title: someSelf.titleLabel.textPresenter

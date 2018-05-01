@@ -13,7 +13,7 @@ import ReactiveSwift
 extension UILabel {
 
     var textPresenter: Presenter<String?> {
-        return Presenter { [weak self] value -> Disposable? in
+        return Presenter.UI { [weak self] value -> Disposable? in
             self?.text = value
             return nil
         }

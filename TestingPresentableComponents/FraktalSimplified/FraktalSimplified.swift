@@ -17,15 +17,44 @@ protocol Presentable: class {
 
 struct Presenter<ViewModel> {
 
-    init(_ bind: @escaping (ViewModel) -> Disposable?) {
-        self.bind = bind
-    }
-
     func present(_ viewModel: ViewModel) -> Disposable? {
         return self.bind(viewModel)
     }
 
+    fileprivate init(_ bind: @escaping (ViewModel) -> Disposable?) {
+        self.bind = bind
+    }
+
     private let bind: (ViewModel) -> Disposable?
+}
+
+extension Presenter {
+
+    static func UI(bind: @escaping (ViewModel) -> Disposable?) -> Presenter {
+        return Presenter { viewModel -> Disposable? in
+
+            let scheduler = UIScheduler()
+            let disposable = CompositeDisposable()
+
+            // TODO: Can we ignore disposable here?
+            scheduler.schedule {
+                disposable += bind(viewModel)
+            }
+
+            return AnyDisposable {
+                // TODO: Can we ignore disposable here?
+                scheduler.schedule(disposable.dispose)
+            }
+        }
+    }
+
+    static func Test(bind: @escaping (ViewModel) -> Disposable?) -> Presenter {
+        if NSClassFromString("XCTestCase") == nil {
+            assertionFailure()
+            return Presenter { _ in nil }
+        }
+        return Presenter(bind)
+    }
 }
 
 extension Presenter {
