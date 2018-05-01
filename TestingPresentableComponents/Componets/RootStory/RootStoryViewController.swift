@@ -29,7 +29,7 @@ final class RootStoryViewController: UIViewController {
 }
 
 extension RootStoryViewController {
-    var presenter: Presenter<RootStory> {
+    var presenter: Presenter<AnyPresentable<RootStoryPresenters>> {
         return Presenter.UI { [weak self] presentable in
             guard let someSelf = self else { return nil }
             return presentable.present(RootStoryPresenters(

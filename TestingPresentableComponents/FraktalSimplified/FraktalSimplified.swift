@@ -59,6 +59,7 @@ extension Presenter {
 
 extension Presenter {
 
+    /// Present SignalProducer of ViewModel
     func present(_ producer: SignalProducer<ViewModel, NoError>) -> Disposable? {
         let compositeDisposable = CompositeDisposable()
         let serialDisposable = SerialDisposable()
@@ -70,5 +71,20 @@ extension Presenter {
         }
 
         return ScopedDisposable(compositeDisposable)
+    }
+
+    /// Present any Presentable with same Presenters
+    func present<T: Presentable>(_ presentable: T) -> Disposable?
+    where ViewModel == AnyPresentable<T.Presenters> {
+        return self.present(ViewModel(presentable))
+    }
+}
+
+final class AnyPresentable<Presenters>: Presentable {
+
+    let present: (Presenters) -> Disposable?
+
+    init<T: Presentable>(_ presentable: T) where T.Presenters == Presenters {
+        self.present = presentable.present
     }
 }
