@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC369A65209886D200621810 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A64209886D200621810 /* EmailField.swift */; };
+		BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9120989A1600621810 /* EmailFieldView.swift */; };
+		BC369A9520989B6800621810 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9420989B6800621810 /* UITextField.swift */; };
 		BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */; };
-		BC8F862B208D0ECA00AB4551 /* Fraktal+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F862A208D0ECA00AB4551 /* Fraktal+UIKit.swift */; };
+		BC8F862B208D0ECA00AB4551 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F862A208D0ECA00AB4551 /* UILabel.swift */; };
 		BC8F8655208D110500AB4551 /* RootStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F8654208D110500AB4551 /* RootStory.swift */; };
 		BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355B9208CF233008B750D /* AppDelegate.swift */; };
 		BCD355BC208CF233008B750D /* RootStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355BB208CF233008B750D /* RootStoryViewController.swift */; };
@@ -48,8 +51,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC369A64209886D200621810 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
+		BC369A9120989A1600621810 /* EmailFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldView.swift; sourceTree = "<group>"; };
+		BC369A9420989B6800621810 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FraktalSimplified.swift; sourceTree = "<group>"; };
-		BC8F862A208D0ECA00AB4551 /* Fraktal+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fraktal+UIKit.swift"; sourceTree = "<group>"; };
+		BC8F862A208D0ECA00AB4551 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		BC8F8654208D110500AB4551 /* RootStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStory.swift; sourceTree = "<group>"; };
 		BCD355B6208CF233008B750D /* TestingPresentableComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPresentableComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD355B9208CF233008B750D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC369A90209899F800621810 /* EmailField */ = {
+			isa = PBXGroup;
+			children = (
+				BC369A64209886D200621810 /* EmailField.swift */,
+				BC369A9120989A1600621810 /* EmailFieldView.swift */,
+			);
+			path = EmailField;
+			sourceTree = "<group>";
+		};
+		BC369A9320989B3C00621810 /* FraktalUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BC8F862A208D0ECA00AB4551 /* UILabel.swift */,
+				BC369A9420989B6800621810 /* UITextField.swift */,
+			);
+			path = FraktalUIKit;
+			sourceTree = "<group>";
+		};
 		BC8F85FD208D069400AB4551 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +132,6 @@
 		BC8F8601208D0E3F00AB4551 /* FraktalSimplified */ = {
 			isa = PBXGroup;
 			children = (
-				BC8F862A208D0ECA00AB4551 /* Fraktal+UIKit.swift */,
 				BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */,
 			);
 			path = FraktalSimplified;
@@ -127,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8F8656208D110F00AB4551 /* RootStory */,
+				BC369A90209899F800621810 /* EmailField */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -156,6 +180,7 @@
 			children = (
 				BC8F8657208D112200AB4551 /* Componets */,
 				BC8F8601208D0E3F00AB4551 /* FraktalSimplified */,
+				BC369A9320989B3C00621810 /* FraktalUIKit */,
 				BC8F85FE208D06C900AB4551 /* Supporting Files */,
 				BCD355B9208CF233008B750D /* AppDelegate.swift */,
 			);
@@ -307,10 +332,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8F8655208D110500AB4551 /* RootStory.swift in Sources */,
-				BC8F862B208D0ECA00AB4551 /* Fraktal+UIKit.swift in Sources */,
+				BC8F862B208D0ECA00AB4551 /* UILabel.swift in Sources */,
+				BC369A9520989B6800621810 /* UITextField.swift in Sources */,
 				BCD355BC208CF233008B750D /* RootStoryViewController.swift in Sources */,
 				BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */,
+				BC369A65209886D200621810 /* EmailField.swift in Sources */,
 				BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */,
+				BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
