@@ -10,6 +10,12 @@
 		BC369A65209886D200621810 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A64209886D200621810 /* EmailField.swift */; };
 		BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9120989A1600621810 /* EmailFieldView.swift */; };
 		BC369A9520989B6800621810 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9420989B6800621810 /* UITextField.swift */; };
+		BC369A972098A66600621810 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A962098A66600621810 /* TestView.swift */; };
+		BC369A9A2098AE9300621810 /* PresentedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A992098AE9300621810 /* PresentedValue.swift */; };
+		BC369A9B2098AECD00621810 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */; };
+		BC369A9C2098AECD00621810 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DB208CFEB7008B750D /* Result.framework */; };
+		BC369A9E2098D11F00621810 /* RootStory+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9D2098D11F00621810 /* RootStory+TestView.swift */; };
+		BC369AA12098D65400621810 /* RootStorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369AA02098D65400621810 /* RootStorySpec.swift */; };
 		BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */; };
 		BC8F862B208D0ECA00AB4551 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F862A208D0ECA00AB4551 /* UILabel.swift */; };
 		BC8F8655208D110500AB4551 /* RootStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F8654208D110500AB4551 /* RootStory.swift */; };
@@ -17,7 +23,6 @@
 		BCD355BC208CF233008B750D /* RootStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355BB208CF233008B750D /* RootStoryViewController.swift */; };
 		BCD355C1208CF233008B750D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C0208CF233008B750D /* Assets.xcassets */; };
 		BCD355C4208CF233008B750D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C2208CF233008B750D /* LaunchScreen.storyboard */; };
-		BCD355CF208CF233008B750D /* TestingPresentableComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355CE208CF233008B750D /* TestingPresentableComponentsTests.swift */; };
 		BCD355DC208CFEB7008B750D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */; };
 		BCD355DD208CFEB7008B750D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DB208CFEB7008B750D /* Result.framework */; };
 		BCD355E1208D01FC008B750D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DF208D01FC008B750D /* Nimble.framework */; };
@@ -54,6 +59,10 @@
 		BC369A64209886D200621810 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		BC369A9120989A1600621810 /* EmailFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldView.swift; sourceTree = "<group>"; };
 		BC369A9420989B6800621810 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		BC369A962098A66600621810 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		BC369A992098AE9300621810 /* PresentedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedValue.swift; sourceTree = "<group>"; };
+		BC369A9D2098D11F00621810 /* RootStory+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootStory+TestView.swift"; sourceTree = "<group>"; };
+		BC369AA02098D65400621810 /* RootStorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStorySpec.swift; sourceTree = "<group>"; };
 		BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FraktalSimplified.swift; sourceTree = "<group>"; };
 		BC8F862A208D0ECA00AB4551 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		BC8F8654208D110500AB4551 /* RootStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStory.swift; sourceTree = "<group>"; };
@@ -64,7 +73,6 @@
 		BCD355C3208CF233008B750D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCD355C5208CF233008B750D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD355CA208CF233008B750D /* TestingPresentableComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingPresentableComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCD355CE208CF233008B750D /* TestingPresentableComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingPresentableComponentsTests.swift; sourceTree = "<group>"; };
 		BCD355D0208CF233008B750D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		BCD355DB208CFEB7008B750D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -86,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC369A9B2098AECD00621810 /* ReactiveSwift.framework in Frameworks */,
+				BC369A9C2098AECD00621810 /* Result.framework in Frameworks */,
 				BCD355E1208D01FC008B750D /* Nimble.framework in Frameworks */,
 				BCD355E2208D01FC008B750D /* Quick.framework in Frameworks */,
 			);
@@ -110,6 +120,39 @@
 				BC369A9420989B6800621810 /* UITextField.swift */,
 			);
 			path = FraktalUIKit;
+			sourceTree = "<group>";
+		};
+		BC369A982098A66E00621810 /* FraktalTestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BC369A962098A66600621810 /* TestView.swift */,
+				BC369A992098AE9300621810 /* PresentedValue.swift */,
+			);
+			path = FraktalTestUtils;
+			sourceTree = "<group>";
+		};
+		BC369A9F2098D12A00621810 /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BC369A9D2098D11F00621810 /* RootStory+TestView.swift */,
+			);
+			path = TestUtils;
+			sourceTree = "<group>";
+		};
+		BC369AA22098D65900621810 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC369AA32098D66A00621810 /* RootStory */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BC369AA32098D66A00621810 /* RootStory */ = {
+			isa = PBXGroup;
+			children = (
+				BC369AA02098D65400621810 /* RootStorySpec.swift */,
+			);
+			path = RootStory;
 			sourceTree = "<group>";
 		};
 		BC8F85FD208D069400AB4551 /* Resources */ = {
@@ -190,7 +233,9 @@
 		BCD355CD208CF233008B750D /* TestingPresentableComponentsTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCD355CE208CF233008B750D /* TestingPresentableComponentsTests.swift */,
+				BC369AA22098D65900621810 /* Components */,
+				BC369A982098A66E00621810 /* FraktalTestUtils */,
+				BC369A9F2098D12A00621810 /* TestUtils */,
 				BCD355D0208CF233008B750D /* Info.plist */,
 			);
 			path = TestingPresentableComponentsTests;
@@ -346,7 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCD355CF208CF233008B750D /* TestingPresentableComponentsTests.swift in Sources */,
+				BC369AA12098D65400621810 /* RootStorySpec.swift in Sources */,
+				BC369A972098A66600621810 /* TestView.swift in Sources */,
+				BC369A9E2098D11F00621810 /* RootStory+TestView.swift in Sources */,
+				BC369A9A2098AE9300621810 /* PresentedValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
