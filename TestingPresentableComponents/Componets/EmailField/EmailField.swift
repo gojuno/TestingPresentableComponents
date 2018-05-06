@@ -37,6 +37,33 @@ final class EmailField {
     }
 }
 
+extension EmailField: Presentable {
+
+    var present: (EmailFieldPresenters) -> Disposable? {
+        return { [weak self] presenters in
+            guard let someSelf = self else { return nil }
+            let disposable = CompositeDisposable()
+            disposable += presenters.placeholder.present(someSelf.placeholder)
+            disposable += presenters.sink.present(someSelf.emailSink)
+            return disposable
+        }
+    }
+}
+
+extension EmailField.Result: Equatable {
+    static func ==(lhs: EmailField.Result, rhs: EmailField.Result) -> Bool {
+        switch (lhs, rhs) {
+        case let (.valid(l), .valid(r)):
+            return l == r
+        case let (.invalid(l), .invalid(r)):
+            return l == r
+        case (.valid, _),
+             (.invalid, _):
+            return false
+        }
+    }
+}
+
 private func makeResult(email: String?) -> EmailField.Result {
     return email.map { $0.isValidEmail ? .valid($0) : .invalid($0) } ?? .invalid(email)
 }

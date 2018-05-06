@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */; };
+		BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */; };
 		BC369A65209886D200621810 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A64209886D200621810 /* EmailField.swift */; };
 		BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9120989A1600621810 /* EmailFieldView.swift */; };
 		BC369A9520989B6800621810 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9420989B6800621810 /* UITextField.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldSpec.swift; sourceTree = "<group>"; };
+		BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmailField+TestView.swift"; sourceTree = "<group>"; };
 		BC369A64209886D200621810 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		BC369A9120989A1600621810 /* EmailFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldView.swift; sourceTree = "<group>"; };
 		BC369A9420989B6800621810 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -104,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC30FAAA209F1ADA003380C0 /* EmailField */ = {
+			isa = PBXGroup;
+			children = (
+				BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */,
+			);
+			path = EmailField;
+			sourceTree = "<group>";
+		};
 		BC369A90209899F800621810 /* EmailField */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BC369A9D2098D11F00621810 /* RootStory+TestView.swift */,
+				BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */,
 			);
 			path = TestUtils;
 			sourceTree = "<group>";
@@ -142,6 +155,7 @@
 		BC369AA22098D65900621810 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BC30FAAA209F1ADA003380C0 /* EmailField */,
 				BC369AA32098D66A00621810 /* RootStory */,
 			);
 			path = Components;
@@ -391,10 +405,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */,
 				BC369AA12098D65400621810 /* RootStorySpec.swift in Sources */,
 				BC369A972098A66600621810 /* TestView.swift in Sources */,
 				BC369A9E2098D11F00621810 /* RootStory+TestView.swift in Sources */,
 				BC369A9A2098AE9300621810 /* PresentedValue.swift in Sources */,
+				BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
