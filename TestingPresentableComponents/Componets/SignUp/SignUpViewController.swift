@@ -15,7 +15,8 @@ struct SignUpScreenPresenters {
     let passwordPlaceholder: Presenter<String>
     let passwordSink: Presenter<(String?) -> Void>
     let email: Presenter<AnyPresentable<EmailFieldPresenters>>
-    let signUp: Presenter<AnyPresentable<ActionViewModelPresenters>>
+    let signUpTitle: Presenter<String>
+    let signUpAction: Presenter<AnyPresentable<ActionViewModelPresenters>>
 }
 
 final class SignUpViewController: UIViewController {
@@ -28,6 +29,7 @@ final class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
 
         self.view.addSubview(self.backButton)
 
@@ -35,12 +37,12 @@ final class SignUpViewController: UIViewController {
             arrangedSubviews: [
                 self.titleLabel,
                 self.emailField,
-                self.passwordField
+                self.passwordField,
+                self.signUpButton
             ]
         )
         container.axis = .vertical
-        container.alignment = .leading
-        container.spacing = 16
+        container.spacing = 24
         self.view.addSubview(container)
 
         self.backButton.translatesAutoresizingMaskIntoConstraints = false
@@ -50,22 +52,38 @@ final class SignUpViewController: UIViewController {
             self.backButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 16),
             self.backButton.trailingAnchor.constraint(lessThanOrEqualTo: self.view.trailingAnchor, constant: -16),
             self.backButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            container.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            container.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-            container.leadingAnchor.constraint(greaterThanOrEqualTo: self.view.leadingAnchor, constant: 16),
-            container.topAnchor.constraint(greaterThanOrEqualTo: self.backButton.bottomAnchor, constant: 16)
+            container.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 16),
+            container.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -16),
+            container.topAnchor.constraint(equalTo: self.backButton.bottomAnchor, constant: 16)
         ])
-
-        self.emailField.setContentCompressionResistancePriority(.init(750), for: .vertical)
-        self.passwordField.setContentCompressionResistancePriority(.init(749), for: .vertical)
-        self.titleLabel.setContentCompressionResistancePriority(.init(748), for: .vertical)
     }
     
-    fileprivate let titleLabel = UILabel()
-    fileprivate let backButton = UIButton()
-    fileprivate let emailField = UITextField()
-    fileprivate let passwordField = UITextField()
-    fileprivate let signUpButton = UIButton()
+    fileprivate let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .preferredFont(forTextStyle: .title1)
+        return label
+    }()
+    fileprivate let backButton = UIButton(type: .system)
+    fileprivate let emailField: UITextField = {
+        let textField = UITextField()
+        textField.borderStyle = .roundedRect
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
+        return textField
+    }()
+    fileprivate let passwordField: UITextField = {
+        let textField = UITextField()
+        textField.borderStyle = .roundedRect
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
+        textField.isSecureTextEntry = true
+        return textField
+    }()
+    fileprivate let signUpButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.titleLabel?.font = .preferredFont(forTextStyle: .title2)
+        return button
+    }()
 
     private init() {
         super.init(nibName: nil, bundle: nil)
@@ -89,7 +107,8 @@ extension SignUpViewController {
                 passwordPlaceholder: someSelf.passwordField.placeholderPresenter,
                 passwordSink: someSelf.passwordField.textSinkPresenter,
                 email: someSelf.emailField.emailPresenter,
-                signUp: someSelf.signUpButton.actionViewModelPresenter
+                signUpTitle: someSelf.signUpButton.titlePresenter,
+                signUpAction: someSelf.signUpButton.actionViewModelPresenter
             ))
         }
     }

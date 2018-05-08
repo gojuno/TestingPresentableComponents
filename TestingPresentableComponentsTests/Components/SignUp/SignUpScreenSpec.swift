@@ -45,6 +45,7 @@ final class SignUpScreenSpec: QuickSpec {
                 expect(view.title) == "Sign Up"
                 expect(view.backTitle) == "Back"
                 expect(view.passwordPlaceholder) == "Password"
+                expect(view.signUpTitle) == "Sign Up"
             }
 
             it("does not have any result") {

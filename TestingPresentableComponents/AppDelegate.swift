@@ -17,14 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let rootViewController = RootStoryViewController()
-        window.rootViewController = rootViewController
+        let welcomeViewController = WelcomeViewController.create()
+        window.rootViewController = welcomeViewController
         window.makeKeyAndVisible()
         self.window = window
 
-        let rootStory = RootStory()
-        self.disposable = rootViewController.presenter.present(rootStory)
-        self.root = rootStory
+        let welcomeScreen = WelcomeScreen()
+        self.disposable = welcomeViewController.presenter.present(welcomeScreen)
+        self.root = welcomeScreen
         
         return true
     }
@@ -34,6 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private var disposable: Disposable?
-    private var root: RootStory?
+    private var root: WelcomeScreen?
 }
 

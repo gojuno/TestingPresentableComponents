@@ -27,6 +27,7 @@ final class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         [self.titleLabel, self.signUpButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview($0)
@@ -37,12 +38,20 @@ final class WelcomeViewController: UIViewController {
             self.titleLabel.leadingAnchor.constraint(greaterThanOrEqualTo: self.view.leadingAnchor, constant: 16),
             self.signUpButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             self.signUpButton.leadingAnchor.constraint(greaterThanOrEqualTo: self.view.leadingAnchor, constant: 16),
-            self.signUpButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
+            self.signUpButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -36)
         ])
     }
 
-    fileprivate let titleLabel = UILabel()
-    fileprivate let signUpButton = UIButton()
+    fileprivate let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .preferredFont(forTextStyle: .largeTitle)
+        return label
+    }()
+    fileprivate let signUpButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.titleLabel?.font = .preferredFont(forTextStyle: .title2)
+        return button
+    }()
 
     private init() {
         super.init(nibName: nil, bundle: nil)

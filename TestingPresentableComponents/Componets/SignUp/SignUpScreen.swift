@@ -26,7 +26,7 @@ final class SignUpScreen {
         self.passwordSink = self.passwordPipe.input.send
         self.email = EmailField()
         self.result = self.backPipe.output.map { .back }
-
+        self.signUpTitle = "Sign Up"
         let validatedPassword = self.passwordPipe.output.producer
             .map { $0.flatMap { $0.count > 5 ? $0 : nil } }
         let validatedEmail = self.email.result.producer.map { result -> String? in
@@ -54,6 +54,7 @@ final class SignUpScreen {
     fileprivate let passwordPlaceholder: String
     fileprivate let passwordSink: (String?) -> Void
     fileprivate let email: EmailField
+    fileprivate let signUpTitle: String
     fileprivate let signUpAction: ActionViewModel
 
     private let backPipe = Signal<Void, NoError>.pipe()
@@ -77,7 +78,8 @@ extension SignUpScreen: Presentable {
             disposable += presenters.passwordPlaceholder.present(someSelf.passwordPlaceholder)
             disposable += presenters.passwordSink.present(someSelf.passwordSink)
             disposable += presenters.email.present(someSelf.email)
-            disposable += presenters.signUp.present(someSelf.signUpAction)
+            disposable += presenters.signUpTitle.present(someSelf.signUpTitle)
+            disposable += presenters.signUpAction.present(someSelf.signUpAction)
             return disposable
         }
     }
