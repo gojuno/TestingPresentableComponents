@@ -25,9 +25,27 @@ extension UIButton {
         }
     }
 
+    var actionViewModelPresenter: Presenter<AnyPresentable<ActionViewModelPresenters>> {
+        return Presenter.UI { [weak self] presentable in
+            guard let someSelf = self else { return nil }
+            return presentable.present(ActionViewModelPresenters(
+                simpleAction: someSelf.simpleActionPresenter,
+                executing: Presenter.UI { _ in nil },
+                enabled: someSelf.enabledPresenter
+            ))
+        }
+    }
+
     var titlePresenter: Presenter<String> {
         return Presenter.UI { [weak self] in
             self?.setTitle($0, for: .normal)
+            return nil
+        }
+    }
+
+    var enabledPresenter: Presenter<Bool> {
+        return Presenter.UI { [weak self] in
+            self?.isEnabled = $0
             return nil
         }
     }
@@ -44,4 +62,10 @@ class Target: NSObject {
 
     private let action: () -> Void
     @objc func performAction() { self.action() }
+}
+
+struct ActionViewModelPresenters {
+    let simpleAction: Presenter<() -> Void>
+    let executing: Presenter<Bool>
+    let enabled: Presenter<Bool>
 }
