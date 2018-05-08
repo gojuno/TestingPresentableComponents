@@ -12,6 +12,7 @@
 		BC1559B020A1F90900E76421 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559AF20A1F90900E76421 /* WelcomeViewController.swift */; };
 		BC1559D820A2022D00E76421 /* WelcomeScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559D720A2022D00E76421 /* WelcomeScreenSpec.swift */; };
 		BC1559DB20A202E500E76421 /* WelcomeScreen+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559DA20A202E500E76421 /* WelcomeScreen+TestView.swift */; };
+		BC1559DF20A2249400E76421 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559DE20A2249400E76421 /* TestApp.swift */; };
 		BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */; };
 		BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */; };
 		BC30FAD8209F404F003380C0 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAD7209F404F003380C0 /* SignUpScreen.swift */; };
@@ -71,6 +72,7 @@
 		BC1559AF20A1F90900E76421 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BC1559D720A2022D00E76421 /* WelcomeScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenSpec.swift; sourceTree = "<group>"; };
 		BC1559DA20A202E500E76421 /* WelcomeScreen+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeScreen+TestView.swift"; sourceTree = "<group>"; };
+		BC1559DE20A2249400E76421 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldSpec.swift; sourceTree = "<group>"; };
 		BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmailField+TestView.swift"; sourceTree = "<group>"; };
 		BC30FAD7209F404F003380C0 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 				BC1559D720A2022D00E76421 /* WelcomeScreenSpec.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BC1559E020A2249800E76421 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				BC1559DE20A2249400E76421 /* TestApp.swift */,
+			);
+			path = TestApp;
 			sourceTree = "<group>";
 		};
 		BC30FAAA209F1ADA003380C0 /* EmailField */ = {
@@ -305,6 +315,7 @@
 				BC369AA22098D65900621810 /* Components */,
 				BC369A982098A66E00621810 /* FraktalTestUtils */,
 				BC30FAE5209F8E92003380C0 /* ReactiveSwiftTestUtils */,
+				BC1559E020A2249800E76421 /* TestApp */,
 				BC369A9F2098D12A00621810 /* TestUtils */,
 				BCD355D0208CF233008B750D /* Info.plist */,
 			);
@@ -465,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1559DF20A2249400E76421 /* TestApp.swift in Sources */,
 				BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */,
 				BC1559AB20A1A9EA00E76421 /* ActionViewModel+TestView.swift in Sources */,
 				BC30FAE0209F65A2003380C0 /* SignUpScreen+TestView.swift in Sources */,
