@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BC1559AB20A1A9EA00E76421 /* ActionViewModel+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559AA20A1A9EA00E76421 /* ActionViewModel+TestView.swift */; };
+		BC1559AD20A1ECF100E76421 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559AC20A1ECF100E76421 /* WelcomeScreen.swift */; };
+		BC1559B020A1F90900E76421 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559AF20A1F90900E76421 /* WelcomeViewController.swift */; };
+		BC1559D820A2022D00E76421 /* WelcomeScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559D720A2022D00E76421 /* WelcomeScreenSpec.swift */; };
+		BC1559DB20A202E500E76421 /* WelcomeScreen+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559DA20A202E500E76421 /* WelcomeScreen+TestView.swift */; };
 		BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */; };
 		BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */; };
 		BC30FAD8209F404F003380C0 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAD7209F404F003380C0 /* SignUpScreen.swift */; };
@@ -67,6 +71,10 @@
 
 /* Begin PBXFileReference section */
 		BC1559AA20A1A9EA00E76421 /* ActionViewModel+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionViewModel+TestView.swift"; sourceTree = "<group>"; };
+		BC1559AC20A1ECF100E76421 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		BC1559AF20A1F90900E76421 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BC1559D720A2022D00E76421 /* WelcomeScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenSpec.swift; sourceTree = "<group>"; };
+		BC1559DA20A202E500E76421 /* WelcomeScreen+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeScreen+TestView.swift"; sourceTree = "<group>"; };
 		BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldSpec.swift; sourceTree = "<group>"; };
 		BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmailField+TestView.swift"; sourceTree = "<group>"; };
 		BC30FAD7209F404F003380C0 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
@@ -124,6 +132,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1559AE20A1ECF900E76421 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				BC1559AC20A1ECF100E76421 /* WelcomeScreen.swift */,
+				BC1559AF20A1F90900E76421 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BC1559D920A2023300E76421 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				BC1559D720A2022D00E76421 /* WelcomeScreenSpec.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		BC30FAAA209F1ADA003380C0 /* EmailField */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +217,7 @@
 				BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */,
 				BC369A9D2098D11F00621810 /* RootStory+TestView.swift */,
 				BC30FADF209F65A2003380C0 /* SignUpScreen+TestView.swift */,
+				BC1559DA20A202E500E76421 /* WelcomeScreen+TestView.swift */,
 			);
 			path = TestUtils;
 			sourceTree = "<group>";
@@ -202,6 +228,7 @@
 				BC30FAAA209F1ADA003380C0 /* EmailField */,
 				BC369AA32098D66A00621810 /* RootStory */,
 				BC30FADE209F6528003380C0 /* SignUp */,
+				BC1559D920A2023300E76421 /* Welcome */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -263,6 +290,7 @@
 				BC369A90209899F800621810 /* EmailField */,
 				BC8F8656208D110F00AB4551 /* RootStory */,
 				BC30FAD9209F58E6003380C0 /* SignUp */,
+				BC1559AE20A1ECF900E76421 /* Welcome */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -451,6 +479,7 @@
 				BC369A9520989B6800621810 /* UITextField.swift in Sources */,
 				BCD355BC208CF233008B750D /* RootStoryViewController.swift in Sources */,
 				BC30FADB209F5B3F003380C0 /* SignUpViewController.swift in Sources */,
+				BC1559AD20A1ECF100E76421 /* WelcomeScreen.swift in Sources */,
 				BC30FAD8209F404F003380C0 /* SignUpScreen.swift in Sources */,
 				BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */,
 				BC369A65209886D200621810 /* EmailField.swift in Sources */,
@@ -458,6 +487,7 @@
 				BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */,
 				BC72988D20A19B1600843835 /* ActionViewModel.swift in Sources */,
 				BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */,
+				BC1559B020A1F90900E76421 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,8 +500,10 @@
 				BC369AA12098D65400621810 /* RootStorySpec.swift in Sources */,
 				BC30FAE0209F65A2003380C0 /* SignUpScreen+TestView.swift in Sources */,
 				BC369A972098A66600621810 /* TestView.swift in Sources */,
+				BC1559DB20A202E500E76421 /* WelcomeScreen+TestView.swift in Sources */,
 				BC30FADD209F6523003380C0 /* SignUpScreenSpec.swift in Sources */,
 				BC30FAE4209F8E8C003380C0 /* SignalProducer+TestUtils.swift in Sources */,
+				BC1559D820A2022D00E76421 /* WelcomeScreenSpec.swift in Sources */,
 				BC369A9E2098D11F00621810 /* RootStory+TestView.swift in Sources */,
 				BC369A9A2098AE9300621810 /* PresentedValue.swift in Sources */,
 				BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */,
