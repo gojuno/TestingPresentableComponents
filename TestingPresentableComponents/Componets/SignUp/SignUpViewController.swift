@@ -15,6 +15,7 @@ struct SignUpScreenPresenters {
     let passwordPlaceholder: Presenter<String>
     let passwordSink: Presenter<(String?) -> Void>
     let email: Presenter<AnyPresentable<EmailFieldPresenters>>
+    let signUp: Presenter<AnyPresentable<ActionViewModelPresenters>>
 }
 
 final class SignUpViewController: UIViewController {
@@ -64,6 +65,7 @@ final class SignUpViewController: UIViewController {
     fileprivate let backButton = UIButton()
     fileprivate let emailField = UITextField()
     fileprivate let passwordField = UITextField()
+    fileprivate let signUpButton = UIButton()
 
     private init() {
         super.init(nibName: nil, bundle: nil)
@@ -86,7 +88,8 @@ extension SignUpViewController {
                 backSink: someSelf.backButton.simpleActionPresenter,
                 passwordPlaceholder: someSelf.passwordField.placeholderPresenter,
                 passwordSink: someSelf.passwordField.textSinkPresenter,
-                email: someSelf.emailField.emailPresenter
+                email: someSelf.emailField.emailPresenter,
+                signUp: someSelf.signUpButton.actionViewModelPresenter
             ))
         }
     }

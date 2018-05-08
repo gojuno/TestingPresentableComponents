@@ -26,6 +26,26 @@ final class SignUpScreen {
         self.passwordSink = self.passwordPipe.input.send
         self.email = EmailField()
         self.result = self.backPipe.output.map { .back }
+
+        let validatedPassword = self.passwordPipe.output.producer
+            .map { $0.flatMap { $0.count > 5 ? $0 : nil } }
+        let validatedEmail = self.email.result.producer.map { result -> String? in
+            switch result {
+            case let .valid(email): return email
+            case .invalid: return nil
+            }
+        }
+        let credentials = SignalProducer
+            .combineLatest(validatedEmail, validatedPassword)
+            .map { email, password -> Credentials? in
+                guard let email = email, let password = password else {
+                    return nil
+                }
+                return Credentials(email: email, password: password)
+            }
+        let credentialsProperty = Property<Credentials?>(initial: nil, then: credentials)
+        let signUpAction = Action<Void, Void, NoError>(unwrapping: credentialsProperty, execute: makeSignUpTask)
+        self.signUpAction = ActionViewModel(action: signUpAction)
     }
 
     fileprivate let title: String
@@ -34,6 +54,7 @@ final class SignUpScreen {
     fileprivate let passwordPlaceholder: String
     fileprivate let passwordSink: (String?) -> Void
     fileprivate let email: EmailField
+    fileprivate let signUpAction: ActionViewModel
 
     private let backPipe = Signal<Void, NoError>.pipe()
     private let passwordPipe = Signal<String?, NoError>.pipe()
@@ -56,7 +77,15 @@ extension SignUpScreen: Presentable {
             disposable += presenters.passwordPlaceholder.present(someSelf.passwordPlaceholder)
             disposable += presenters.passwordSink.present(someSelf.passwordSink)
             disposable += presenters.email.present(someSelf.email)
+            disposable += presenters.signUp.present(someSelf.signUpAction)
             return disposable
         }
     }
+}
+
+private typealias Credentials = (email: String, password: String)
+
+private func makeSignUpTask(credentials: Credentials) -> SignalProducer<Void, NoError> {
+    print("🚨 Singned Up! Email: \(credentials.email), Password: \(credentials.password)")
+    return .empty
 }

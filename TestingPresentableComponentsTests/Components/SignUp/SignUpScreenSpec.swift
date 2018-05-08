@@ -61,6 +61,43 @@ final class SignUpScreenSpec: QuickSpec {
                     expect(resultHistory.values) == [.back]
                 }
             }
+
+            it("disables the sign up action") {
+                expect(view.signUpAction.enabled) == false
+            }
+
+            describe("when a user enters valid email") {
+
+                beforeEach {
+                    view.email.sink("some@email.com")
+                }
+
+                it("disables the sign up action") {
+                    expect(view.signUpAction.enabled) == false
+                }
+
+                describe("when a user enters a short password") {
+
+                    beforeEach {
+                        view.passwordSink("12345")
+                    }
+
+                    fit("disables the sign up action") {
+                        expect(view.signUpAction._enabled.presented.map { $0.value.value }) == [false]
+                    }
+                }
+
+                describe("when a user enters a long password") {
+
+                    beforeEach {
+                        view.passwordSink("123456")
+                    }
+
+                    it("enables the sign up action") {
+                        expect(view.signUpAction.enabled) == true
+                    }
+                }
+            }
         }
     }
 }
