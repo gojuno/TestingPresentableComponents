@@ -82,7 +82,7 @@ final class SignUpScreenSpec: QuickSpec {
                         view.passwordSink("12345")
                     }
 
-                    fit("disables the sign up action") {
+                    it("disables the sign up action") {
                         expect(view.signUpAction._enabled.presented.map { $0.value.value }) == [false]
                     }
                 }
