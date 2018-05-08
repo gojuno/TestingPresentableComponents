@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */; };
 		BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */; };
+		BC30FAD8209F404F003380C0 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAD7209F404F003380C0 /* SignUpScreen.swift */; };
+		BC30FADB209F5B3F003380C0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FADA209F5B3F003380C0 /* SignUpViewController.swift */; };
+		BC30FADD209F6523003380C0 /* SignUpScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FADC209F6523003380C0 /* SignUpScreenSpec.swift */; };
+		BC30FAE0209F65A2003380C0 /* SignUpScreen+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FADF209F65A2003380C0 /* SignUpScreen+TestView.swift */; };
+		BC30FAE2209F6930003380C0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAE1209F6930003380C0 /* UIButton.swift */; };
+		BC30FAE4209F8E8C003380C0 /* SignalProducer+TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAE3209F8E8C003380C0 /* SignalProducer+TestUtils.swift */; };
 		BC369A65209886D200621810 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A64209886D200621810 /* EmailField.swift */; };
 		BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9120989A1600621810 /* EmailFieldView.swift */; };
 		BC369A9520989B6800621810 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9420989B6800621810 /* UITextField.swift */; };
@@ -60,6 +66,12 @@
 /* Begin PBXFileReference section */
 		BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldSpec.swift; sourceTree = "<group>"; };
 		BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmailField+TestView.swift"; sourceTree = "<group>"; };
+		BC30FAD7209F404F003380C0 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		BC30FADA209F5B3F003380C0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BC30FADC209F6523003380C0 /* SignUpScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenSpec.swift; sourceTree = "<group>"; };
+		BC30FADF209F65A2003380C0 /* SignUpScreen+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen+TestView.swift"; sourceTree = "<group>"; };
+		BC30FAE1209F6930003380C0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		BC30FAE3209F8E8C003380C0 /* SignalProducer+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalProducer+TestUtils.swift"; sourceTree = "<group>"; };
 		BC369A64209886D200621810 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		BC369A9120989A1600621810 /* EmailFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldView.swift; sourceTree = "<group>"; };
 		BC369A9420989B6800621810 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -116,6 +128,31 @@
 			path = EmailField;
 			sourceTree = "<group>";
 		};
+		BC30FAD9209F58E6003380C0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BC30FAD7209F404F003380C0 /* SignUpScreen.swift */,
+				BC30FADA209F5B3F003380C0 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BC30FADE209F6528003380C0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BC30FADC209F6523003380C0 /* SignUpScreenSpec.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BC30FAE5209F8E92003380C0 /* ReactiveSwiftTestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BC30FAE3209F8E8C003380C0 /* SignalProducer+TestUtils.swift */,
+			);
+			path = ReactiveSwiftTestUtils;
+			sourceTree = "<group>";
+		};
 		BC369A90209899F800621810 /* EmailField */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +165,7 @@
 		BC369A9320989B3C00621810 /* FraktalUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				BC30FAE1209F6930003380C0 /* UIButton.swift */,
 				BC8F862A208D0ECA00AB4551 /* UILabel.swift */,
 				BC369A9420989B6800621810 /* UITextField.swift */,
 			);
@@ -146,8 +184,9 @@
 		BC369A9F2098D12A00621810 /* TestUtils */ = {
 			isa = PBXGroup;
 			children = (
-				BC369A9D2098D11F00621810 /* RootStory+TestView.swift */,
 				BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */,
+				BC369A9D2098D11F00621810 /* RootStory+TestView.swift */,
+				BC30FADF209F65A2003380C0 /* SignUpScreen+TestView.swift */,
 			);
 			path = TestUtils;
 			sourceTree = "<group>";
@@ -157,6 +196,7 @@
 			children = (
 				BC30FAAA209F1ADA003380C0 /* EmailField */,
 				BC369AA32098D66A00621810 /* RootStory */,
+				BC30FADE209F6528003380C0 /* SignUp */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -206,8 +246,9 @@
 		BC8F8657208D112200AB4551 /* Componets */ = {
 			isa = PBXGroup;
 			children = (
-				BC8F8656208D110F00AB4551 /* RootStory */,
 				BC369A90209899F800621810 /* EmailField */,
+				BC8F8656208D110F00AB4551 /* RootStory */,
+				BC30FAD9209F58E6003380C0 /* SignUp */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -249,6 +290,7 @@
 			children = (
 				BC369AA22098D65900621810 /* Components */,
 				BC369A982098A66E00621810 /* FraktalTestUtils */,
+				BC30FAE5209F8E92003380C0 /* ReactiveSwiftTestUtils */,
 				BC369A9F2098D12A00621810 /* TestUtils */,
 				BCD355D0208CF233008B750D /* Info.plist */,
 			);
@@ -394,8 +436,11 @@
 				BC8F862B208D0ECA00AB4551 /* UILabel.swift in Sources */,
 				BC369A9520989B6800621810 /* UITextField.swift in Sources */,
 				BCD355BC208CF233008B750D /* RootStoryViewController.swift in Sources */,
+				BC30FADB209F5B3F003380C0 /* SignUpViewController.swift in Sources */,
+				BC30FAD8209F404F003380C0 /* SignUpScreen.swift in Sources */,
 				BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */,
 				BC369A65209886D200621810 /* EmailField.swift in Sources */,
+				BC30FAE2209F6930003380C0 /* UIButton.swift in Sources */,
 				BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */,
 				BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */,
 			);
@@ -407,7 +452,10 @@
 			files = (
 				BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */,
 				BC369AA12098D65400621810 /* RootStorySpec.swift in Sources */,
+				BC30FAE0209F65A2003380C0 /* SignUpScreen+TestView.swift in Sources */,
 				BC369A972098A66600621810 /* TestView.swift in Sources */,
+				BC30FADD209F6523003380C0 /* SignUpScreenSpec.swift in Sources */,
+				BC30FAE4209F8E8C003380C0 /* SignalProducer+TestUtils.swift in Sources */,
 				BC369A9E2098D11F00621810 /* RootStory+TestView.swift in Sources */,
 				BC369A9A2098AE9300621810 /* PresentedValue.swift in Sources */,
 				BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */,
