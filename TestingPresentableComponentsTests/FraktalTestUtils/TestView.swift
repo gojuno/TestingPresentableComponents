@@ -17,14 +17,9 @@ protocol TestViewType {
     var disposable: ScopedDisposable<AnyDisposable>? { get }
 }
 
-// TODO: Can it be dropped?
-protocol PresenterType {
-    associatedtype ViewModel
-    var presenter: Presenter<ViewModel> { get }
-}
-
-protocol TestPresenterProtocol: PresenterType {
+protocol TestPresenterProtocol {
     associatedtype TestView: TestViewType
+    var presenter: Presenter<TestView.ViewModel> { get }
     var presented: [PresentedValue<TestView>] { get }
 }
 
