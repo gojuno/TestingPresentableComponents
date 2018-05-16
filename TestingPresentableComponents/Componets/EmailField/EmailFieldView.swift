@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FraktalSimplified
 
 struct EmailFieldPresenters {
     let placeholder: Presenter<String>

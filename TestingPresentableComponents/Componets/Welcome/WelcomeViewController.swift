@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 import ReactiveSwift
+import FraktalSimplified
 
 struct WelcomeScreenPresenters {
     let title: Presenter<String>

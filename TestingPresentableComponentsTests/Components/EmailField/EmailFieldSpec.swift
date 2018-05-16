@@ -9,6 +9,8 @@ import Foundation
 
 import Quick
 import Nimble
+import FraktalSimplified
+import FraktalSimplifiedTestUtils
 
 @testable import TestingPresentableComponents
 

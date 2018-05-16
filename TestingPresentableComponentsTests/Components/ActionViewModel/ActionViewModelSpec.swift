@@ -11,6 +11,8 @@ import Quick
 import Nimble
 import ReactiveSwift
 import enum Result.NoError
+import FraktalSimplified
+import FraktalSimplifiedTestUtils
 
 @testable import TestingPresentableComponents
 

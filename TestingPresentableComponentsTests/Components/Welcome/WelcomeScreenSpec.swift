@@ -11,6 +11,8 @@ import Quick
 import Nimble
 
 @testable import TestingPresentableComponents
+import FraktalSimplified
+import FraktalSimplifiedTestUtils
 
 final class WelcomeScreenSpec: QuickSpec {
 

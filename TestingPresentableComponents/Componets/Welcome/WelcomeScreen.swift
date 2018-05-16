@@ -8,6 +8,7 @@
 import Foundation
 
 import ReactiveSwift
+import FraktalSimplified
 import enum Result.NoError
 
 final class WelcomeScreen {

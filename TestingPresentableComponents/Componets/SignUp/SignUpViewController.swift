@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FraktalSimplified
 
 struct SignUpScreenPresenters {
     let title: Presenter<String>

@@ -8,6 +8,8 @@
 import Foundation
 
 import ReactiveSwift
+import FraktalSimplified
+import FraktalSimplifiedTestUtils
 
 @testable import TestingPresentableComponents
 

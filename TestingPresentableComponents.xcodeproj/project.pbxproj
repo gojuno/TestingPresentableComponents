@@ -14,34 +14,24 @@
 		BC1559DB20A202E500E76421 /* WelcomeScreen+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559DA20A202E500E76421 /* WelcomeScreen+TestView.swift */; };
 		BC1559DF20A2249400E76421 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559DE20A2249400E76421 /* TestApp.swift */; };
 		BC1559E220A36FC100E76421 /* ActionViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1559E120A36FC100E76421 /* ActionViewModelSpec.swift */; };
-		BC155A0D20A3706800E76421 /* ActionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC155A0C20A3706800E76421 /* ActionMock.swift */; };
 		BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */; };
 		BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */; };
 		BC30FAD8209F404F003380C0 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAD7209F404F003380C0 /* SignUpScreen.swift */; };
 		BC30FADB209F5B3F003380C0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FADA209F5B3F003380C0 /* SignUpViewController.swift */; };
 		BC30FADD209F6523003380C0 /* SignUpScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FADC209F6523003380C0 /* SignUpScreenSpec.swift */; };
 		BC30FAE0209F65A2003380C0 /* SignUpScreen+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FADF209F65A2003380C0 /* SignUpScreen+TestView.swift */; };
-		BC30FAE2209F6930003380C0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAE1209F6930003380C0 /* UIButton.swift */; };
-		BC30FAE4209F8E8C003380C0 /* SignalProducer+TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30FAE3209F8E8C003380C0 /* SignalProducer+TestUtils.swift */; };
 		BC369A65209886D200621810 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A64209886D200621810 /* EmailField.swift */; };
 		BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9120989A1600621810 /* EmailFieldView.swift */; };
-		BC369A9520989B6800621810 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A9420989B6800621810 /* UITextField.swift */; };
-		BC369A972098A66600621810 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A962098A66600621810 /* TestView.swift */; };
-		BC369A9A2098AE9300621810 /* PresentedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC369A992098AE9300621810 /* PresentedValue.swift */; };
-		BC369A9B2098AECD00621810 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */; };
-		BC369A9C2098AECD00621810 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DB208CFEB7008B750D /* Result.framework */; };
 		BC72988D20A19B1600843835 /* ActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72988C20A19B1600843835 /* ActionViewModel.swift */; };
-		BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */; };
-		BC8F862B208D0ECA00AB4551 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F862A208D0ECA00AB4551 /* UILabel.swift */; };
 		BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD355B9208CF233008B750D /* AppDelegate.swift */; };
 		BCD355C1208CF233008B750D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C0208CF233008B750D /* Assets.xcassets */; };
 		BCD355C4208CF233008B750D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD355C2208CF233008B750D /* LaunchScreen.storyboard */; };
-		BCD355DC208CFEB7008B750D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */; };
-		BCD355DD208CFEB7008B750D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DB208CFEB7008B750D /* Result.framework */; };
-		BCD355E1208D01FC008B750D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355DF208D01FC008B750D /* Nimble.framework */; };
-		BCD355E2208D01FC008B750D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD355E0208D01FC008B750D /* Quick.framework */; };
-		BCD355E4208D048B008B750D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCD355DF208D01FC008B750D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BCD355E5208D048B008B750D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCD355E0208D01FC008B750D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E627C95420ACBCA4009F8828 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E627C95520ACBCA4009F8828 /* Quick.framework */; };
+		E627C95620ACBCAA009F8828 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E627C95720ACBCAA009F8828 /* Nimble.framework */; };
+		E65958DE20ACBABC0036F172 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65958DF20ACBABC0036F172 /* ReactiveSwift.framework */; };
+		E65958E020ACBAC10036F172 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65958E120ACBAC10036F172 /* Result.framework */; };
+		E6B310C620ACB944004668BC /* FraktalSimplified.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B310C720ACB944004668BC /* FraktalSimplified.framework */; };
+		E6B310C820ACB951004668BC /* FraktalSimplifiedTestUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B310C920ACB951004668BC /* FraktalSimplifiedTestUtils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +51,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BCD355E4208D048B008B750D /* Nimble.framework in CopyFiles */,
-				BCD355E5208D048B008B750D /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,23 +64,15 @@
 		BC1559DA20A202E500E76421 /* WelcomeScreen+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeScreen+TestView.swift"; sourceTree = "<group>"; };
 		BC1559DE20A2249400E76421 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		BC1559E120A36FC100E76421 /* ActionViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewModelSpec.swift; sourceTree = "<group>"; };
-		BC155A0C20A3706800E76421 /* ActionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMock.swift; sourceTree = "<group>"; };
 		BC30FAA8209F1AD3003380C0 /* EmailFieldSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldSpec.swift; sourceTree = "<group>"; };
 		BC30FAAB209F1EA7003380C0 /* EmailField+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmailField+TestView.swift"; sourceTree = "<group>"; };
 		BC30FAD7209F404F003380C0 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		BC30FADA209F5B3F003380C0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BC30FADC209F6523003380C0 /* SignUpScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenSpec.swift; sourceTree = "<group>"; };
 		BC30FADF209F65A2003380C0 /* SignUpScreen+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen+TestView.swift"; sourceTree = "<group>"; };
-		BC30FAE1209F6930003380C0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		BC30FAE3209F8E8C003380C0 /* SignalProducer+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalProducer+TestUtils.swift"; sourceTree = "<group>"; };
 		BC369A64209886D200621810 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		BC369A9120989A1600621810 /* EmailFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFieldView.swift; sourceTree = "<group>"; };
-		BC369A9420989B6800621810 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
-		BC369A962098A66600621810 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		BC369A992098AE9300621810 /* PresentedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedValue.swift; sourceTree = "<group>"; };
 		BC72988C20A19B1600843835 /* ActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewModel.swift; sourceTree = "<group>"; };
-		BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FraktalSimplified.swift; sourceTree = "<group>"; };
-		BC8F862A208D0ECA00AB4551 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		BCD355B6208CF233008B750D /* TestingPresentableComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPresentableComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD355B9208CF233008B750D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD355C0208CF233008B750D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,10 +80,12 @@
 		BCD355C5208CF233008B750D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD355CA208CF233008B750D /* TestingPresentableComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingPresentableComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD355D0208CF233008B750D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
-		BCD355DB208CFEB7008B750D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		BCD355DF208D01FC008B750D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		BCD355E0208D01FC008B750D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		E627C95520ACBCA4009F8828 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E627C95720ACBCAA009F8828 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E65958DF20ACBABC0036F172 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E65958E120ACBAC10036F172 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B310C720ACB944004668BC /* FraktalSimplified.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FraktalSimplified.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B310C920ACB951004668BC /* FraktalSimplifiedTestUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FraktalSimplifiedTestUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCD355DC208CFEB7008B750D /* ReactiveSwift.framework in Frameworks */,
-				BCD355DD208CFEB7008B750D /* Result.framework in Frameworks */,
+				E65958E020ACBAC10036F172 /* Result.framework in Frameworks */,
+				E65958DE20ACBABC0036F172 /* ReactiveSwift.framework in Frameworks */,
+				E6B310C620ACB944004668BC /* FraktalSimplified.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,10 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC369A9B2098AECD00621810 /* ReactiveSwift.framework in Frameworks */,
-				BC369A9C2098AECD00621810 /* Result.framework in Frameworks */,
-				BCD355E1208D01FC008B750D /* Nimble.framework in Frameworks */,
-				BCD355E2208D01FC008B750D /* Quick.framework in Frameworks */,
+				E627C95620ACBCAA009F8828 /* Nimble.framework in Frameworks */,
+				E627C95420ACBCA4009F8828 /* Quick.framework in Frameworks */,
+				E6B310C820ACB951004668BC /* FraktalSimplifiedTestUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,15 +170,6 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
-		BC30FAE5209F8E92003380C0 /* ReactiveSwiftTestUtils */ = {
-			isa = PBXGroup;
-			children = (
-				BC155A0C20A3706800E76421 /* ActionMock.swift */,
-				BC30FAE3209F8E8C003380C0 /* SignalProducer+TestUtils.swift */,
-			);
-			path = ReactiveSwiftTestUtils;
-			sourceTree = "<group>";
-		};
 		BC369A90209899F800621810 /* EmailField */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,25 +177,6 @@
 				BC369A9120989A1600621810 /* EmailFieldView.swift */,
 			);
 			path = EmailField;
-			sourceTree = "<group>";
-		};
-		BC369A9320989B3C00621810 /* FraktalUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				BC30FAE1209F6930003380C0 /* UIButton.swift */,
-				BC8F862A208D0ECA00AB4551 /* UILabel.swift */,
-				BC369A9420989B6800621810 /* UITextField.swift */,
-			);
-			path = FraktalUIKit;
-			sourceTree = "<group>";
-		};
-		BC369A982098A66E00621810 /* FraktalTestUtils */ = {
-			isa = PBXGroup;
-			children = (
-				BC369A962098A66600621810 /* TestView.swift */,
-				BC369A992098AE9300621810 /* PresentedValue.swift */,
-			);
-			path = FraktalTestUtils;
 			sourceTree = "<group>";
 		};
 		BC369A9F2098D12A00621810 /* TestUtils */ = {
@@ -272,14 +226,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BC8F8601208D0E3F00AB4551 /* FraktalSimplified */ = {
-			isa = PBXGroup;
-			children = (
-				BC8F85FF208D09AA00AB4551 /* FraktalSimplified.swift */,
-			);
-			path = FraktalSimplified;
-			sourceTree = "<group>";
-		};
 		BC8F8657208D112200AB4551 /* Componets */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,8 +261,6 @@
 			isa = PBXGroup;
 			children = (
 				BC8F8657208D112200AB4551 /* Componets */,
-				BC8F8601208D0E3F00AB4551 /* FraktalSimplified */,
-				BC369A9320989B3C00621810 /* FraktalUIKit */,
 				BC8F85FE208D06C900AB4551 /* Supporting Files */,
 				BCD355B9208CF233008B750D /* AppDelegate.swift */,
 			);
@@ -327,8 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				BC369AA22098D65900621810 /* Components */,
-				BC369A982098A66E00621810 /* FraktalTestUtils */,
-				BC30FAE5209F8E92003380C0 /* ReactiveSwiftTestUtils */,
 				BC1559E020A2249800E76421 /* TestApp */,
 				BC369A9F2098D12A00621810 /* TestUtils */,
 				BCD355D0208CF233008B750D /* Info.plist */,
@@ -339,10 +281,12 @@
 		BCD355D9208CFEB7008B750D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BCD355DF208D01FC008B750D /* Nimble.framework */,
-				BCD355E0208D01FC008B750D /* Quick.framework */,
-				BCD355DA208CFEB7008B750D /* ReactiveSwift.framework */,
-				BCD355DB208CFEB7008B750D /* Result.framework */,
+				E627C95720ACBCAA009F8828 /* Nimble.framework */,
+				E627C95520ACBCA4009F8828 /* Quick.framework */,
+				E65958E120ACBAC10036F172 /* Result.framework */,
+				E65958DF20ACBABC0036F172 /* ReactiveSwift.framework */,
+				E6B310C920ACB951004668BC /* FraktalSimplifiedTestUtils.framework */,
+				E6B310C720ACB944004668BC /* FraktalSimplified.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,7 +301,6 @@
 				BCD355B2208CF233008B750D /* Sources */,
 				BCD355B3208CF233008B750D /* Frameworks */,
 				BCD355B4208CF233008B750D /* Resources */,
-				BCD355DE208CFEE7008B750D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -446,40 +389,16 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		BCD355DE208CFEE7008B750D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BCD355B2208CF233008B750D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC8F862B208D0ECA00AB4551 /* UILabel.swift in Sources */,
-				BC369A9520989B6800621810 /* UITextField.swift in Sources */,
 				BC30FADB209F5B3F003380C0 /* SignUpViewController.swift in Sources */,
 				BC1559AD20A1ECF100E76421 /* WelcomeScreen.swift in Sources */,
 				BC30FAD8209F404F003380C0 /* SignUpScreen.swift in Sources */,
 				BCD355BA208CF233008B750D /* AppDelegate.swift in Sources */,
 				BC369A65209886D200621810 /* EmailField.swift in Sources */,
-				BC30FAE2209F6930003380C0 /* UIButton.swift in Sources */,
-				BC8F8600208D09AA00AB4551 /* FraktalSimplified.swift in Sources */,
 				BC72988D20A19B1600843835 /* ActionViewModel.swift in Sources */,
 				BC369A9220989A1600621810 /* EmailFieldView.swift in Sources */,
 				BC1559B020A1F90900E76421 /* WelcomeViewController.swift in Sources */,
@@ -490,18 +409,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC155A0D20A3706800E76421 /* ActionMock.swift in Sources */,
 				BC1559DF20A2249400E76421 /* TestApp.swift in Sources */,
 				BC1559E220A36FC100E76421 /* ActionViewModelSpec.swift in Sources */,
 				BC30FAAC209F1EA7003380C0 /* EmailField+TestView.swift in Sources */,
 				BC1559AB20A1A9EA00E76421 /* ActionViewModel+TestView.swift in Sources */,
 				BC30FAE0209F65A2003380C0 /* SignUpScreen+TestView.swift in Sources */,
-				BC369A972098A66600621810 /* TestView.swift in Sources */,
 				BC1559DB20A202E500E76421 /* WelcomeScreen+TestView.swift in Sources */,
 				BC30FADD209F6523003380C0 /* SignUpScreenSpec.swift in Sources */,
-				BC30FAE4209F8E8C003380C0 /* SignalProducer+TestUtils.swift in Sources */,
 				BC1559D820A2022D00E76421 /* WelcomeScreenSpec.swift in Sources */,
-				BC369A9A2098AE9300621810 /* PresentedValue.swift in Sources */,
 				BC30FAA9209F1AD3003380C0 /* EmailFieldSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
