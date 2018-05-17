@@ -69,7 +69,7 @@ final class ActionViewModelSpec: QuickSpec {
                     }
 
                     it("enables action back") {
-                        expect(view._enabled.presented.map { $0.value.value }) == [true, false, true]
+                        expect(view.enabled) == true
                     }
 
                     it("does not execute the action") {
